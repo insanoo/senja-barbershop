@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Senja Barbershop</title>
+</head>
+<body class="font-serif">
+  
+    <!-- ========== HEADER ========== -->
+<header class="sticky top-0 inset-x-0 bg-white border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+    <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 px-4 sm:px-6 lg:px-8 py-2">
+      <!-- Logo w/ Collapse Button -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a class="flex-none text-white rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="#" aria-label="Preline">
+          Senja Barbershop
+        </a>
+        <!-- End Logo -->
+  
+        <!-- Collapse Button -->
+        <div class="md:hidden">
+          <button type="button" class="hs-collapse-toggle relative size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-header-scrollspy-collapse" aria-expanded="false" aria-controls="hs-header-scrollspy" aria-label="Toggle navigation" data-hs-collapse="#hs-header-scrollspy">
+            <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
+        <!-- End Collapse Button -->
+      </div>
+      <!-- End Logo w/ Collapse Button -->
+  
+      <!-- Collapse -->
+      <div id="hs-header-scrollspy" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block" aria-labelledby="hs-header-scrollspy-collapse">
+        <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+          <div data-hs-scrollspy="#scrollspy" class="py-2 md:py-0 [--scrollspy-offset:220] md:[--scrollspy-offset:70] flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
+            <a class="p-2 flex items-center text-sm  dark:text-neutral-200 dark:hover:text-sky-50" href="#home">
+              <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              Beranda   
+            </a>
+  
+            <a class="p-2 flex items-center text-sm  dark:text-neutral-200 dark:hover:text-sky-50" href="#about">
+              <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Tentang Kami
+            </a>
+  
+            <a class="p-2 flex items-center text-sm  dark:text-neutral-200 dark:hover:text-sky-50" href="#service">
+              <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+              Layanan
+            </a>
+  
+            <a class="p-2 flex items-center text-sm  dark:text-neutral-200 dark:hover:text-sky-50" href="#contact">
+              <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+              Kontak Kami
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Collapse -->
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+
+   <!-- Header End-->
+
+   <!-- Hero Section Start -->
+<section id="home" class="pt-18  min-h-screen flex items-center bg-custom">
+    <div class="container mx-auto  bg-slate-400 bg-opacity-25 pb-10 rounded-lg">
+        <div class="flex flex-wrap items-center justify-center text-center ">
+            <div class="w-full px-4 lg:w-2/3">
+                <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">
+                    Halo semua, Selamat datang di 
+                    <span class="block font-bold text-dark text-3xl mt-1 mb-6 lg:text-5xl">
+                        Senja Barbershop!
+                    </span>
+                </h1>
+                <p class="text-lg text-white mb-6 lg:text-xl">
+                    Temukan gaya rambut yang sempurna dengan pelayanan terbaik di Senja Barbershop. Kami siap memberikan tampilan terbaik untuk Anda!
+                </p>
+                <div class="flex justify-center">
+                    <a href="https://wa.me/+6285156358709" target="_blank" class="text-base font-semibold text-white bg-green-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                        Hubungi Kami via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+
+<!-- About Section Start-->
+
+<section id="about" class="pt-16 pb-32">
+  <div class="container mx-auto">
+      <div class="flex flex-wrap bg-pink-400 bg-opacity-15 rounded-lg pt-8">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+              <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
+              <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Yuk, Cukur di Tempat Kami</h2>
+              <p class="font-medium text-base text-justify text-slate-500 max-w-xl lg:text-lg">
+                  Selamat datang di Senja Barbershop! Kami adalah tempat ideal untuk perawatan rambut dan gaya yang stylish. Di sini, kami tidak hanya memberikan layanan potong rambut berkualitas tinggi, tetapi juga pengalaman yang nyaman dan menyenangkan. Dengan tim profesional kami yang berpengalaman, kami memastikan setiap kunjungan Anda adalah pengalaman yang memuaskan.
+              </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+              <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h3>
+              <p class="font-medium text-base text-justify text-slate-500 mb-6">
+                  Kami percaya bahwa hubungan yang baik dengan pelanggan adalah kunci untuk pelayanan yang luar biasa. Ikuti kami di media sosial dan tetap terhubung dengan kami untuk mendapatkan update terbaru, tips gaya, dan penawaran khusus. Kami sangat senang bisa berbagi perjalanan ini dengan Anda dan menjalin hubungan yang lebih dekat.
+              </p>
+              <div class="flex items-center mb-6">
+                  <!-- YouTube -->
+                  <a href="https://youtube.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-pink-400 hover:bg-pink-400 hover:text-white">
+                      <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  </a>
+
+                  <!-- Instagram -->
+                  <a href="https://www.instagram.com/rahmat_senja01/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-pink-400 hover:bg-pink-400 hover:text-white">
+                      <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                  </a>
+                  
+                  <!-- TikTok -->
+                  <a href="https://www.tiktok.com/@senja_barbershop" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-pink-400 hover:bg-pink-400 hover:text-white">
+                      <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- About Section End-->
+
+<!-- layanan section start-->
+<section id="service" class="py-12 bg-pink-400 bg-opacity-15">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Layanan Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1: Haircut -->
+      <div class="bg-white ring-4 ring-pink-400 shadow-lg rounded-lg overflow-hidden">
+        <img src="src/img/logo4.jpg" alt="Haircut" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Haircut</h3>
+          <p class="text-gray-700 text-justify">Nikmati potongan rambut terbaru yang sesuai dengan tren dan gaya Anda. Tim profesional kami akan memastikan Anda mendapatkan hasil yang memuaskan dan sesuai dengan keinginan.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Coloring Hair -->
+      <div class="bg-white ring-4 ring-pink-400 shadow-lg rounded-lg overflow-hidden">
+        <img src="src/img/logo5.jpg" alt="Coloring Hair" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Coloring Hair</h3>
+          <p class="text-gray-700 text-justify">Ubah penampilan Anda dengan pewarnaan rambut yang menawan. Kami menawarkan berbagai pilihan warna dan teknik pewarnaan yang bisa disesuaikan dengan selera dan kebutuhan Anda.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Haircut Delivery -->
+      <div class="bg-white ring-4 ring-pink-400 shadow-lg rounded-lg overflow-hidden">
+        <img src="src/img/logo3.jpg" alt="Haircut Delivery" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Haircut Delivery</h3>
+          <p class="text-gray-700 text-justify">Tidak sempat datang ke barbershop? Tidak masalah! Kami menyediakan layanan potong rambut di tempat untuk kenyamanan Anda. Kami akan datang ke lokasi Anda dengan peralatan lengkap dan memberikan layanan potong rambut berkualitas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- layanan section end-->
+
+<!-- Contact section start -->
+<section id="contact" class="py-12 bg-gray-100 dark:bg-neutral-900">
+  <div class="max-w-7xl px-4 py-12 mx-auto">
+    <div class="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
+      <h2 class="font-semibold text-2xl sm:text-4xl text-gray-900 dark:text-white">
+        Kontak Kami
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-6 md:gap-8 lg:gap-12">
+      <!-- Image Column -->
+      <div class="relative overflow-hidden bg-gray-200 rounded-2xl ring-4 ring-pink-400  dark:bg-neutral-800">
+        <img class="w-full h-full object-cover rounded-2xl" src="src/img/logo.jpg" alt="Contacts Image">
+      </div>
+      <!-- End Image Column -->
+
+      <!-- Contact Information Column -->
+      <div class="space-y-8 lg:space-y-16">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            Alamat Kami
+          </h3>
+
+          <div class="flex items-start gap-4 bg-pink-400 bg-opacity-15 rounded-lg px-6 py-6 ring-4 ring-white">
+            <svg class="w-6 h-6 text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+
+            <div>
+              <p class="text-sm text-gray-600 dark:text-neutral-400">
+                Bekasi
+              </p>
+              <address class="text-base text-gray-900 dark:text-white ">
+                Perumahan Papan Indah Jl. Kramat Mundu Barat, Mangunjaya, Kec. Tambun Selatan, Kabupaten Bekasi<br>
+                Jawa Barat (17510) 
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            Kontak Kami
+          </h3>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 bg-pink-400 bg-opacity-15 rounded-lg px-6 py-6 ring-4 ring-white">
+              <svg class="w-6 h-6 text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"></path>
+                <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path>
+              </svg>
+
+              <div>
+                <p class="text-sm text-gray-600 dark:text-neutral-400">
+                  Email Kami
+                </p>
+                <a class="text-base font-medium text-blue-600 dark:text-blue-400 hover:underline " href="mailto:rahmatfirdaus.tkj@gmail.com">
+                  rahmatfirdaus.tkj@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-pink-400 bg-opacity-15 rounded-lg px-6 py-6 ring-4 ring-white">
+              <svg class="w-6 h-6 text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+
+              <div>
+                <p class="text-sm text-gray-600 dark:text-neutral-400">
+                  Telepon Kami
+                </p>
+                <a class="text-base font-medium text-blue-600 dark:text-blue-400 hover:underline" href="https://wa.me/+6285156358709">
+                  +6285156358709
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-pink-400 bg-opacity-15 rounded-lg px-6 py-6 ring-4 ring-white">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4 ">
+            Hubungi Kami via WhatsApp
+          </h3>
+          <a href="https://wa.me/+6285156358709" class="inline-flex items-center px-4 py-2 bg-green-500 text-white font-medium rounded-lg shadow-md hover:bg-green-600 dark:bg-green-700 dark:hover:bg-green-800 transition duration-150">
+            Hubungi kami via WhatsApp
+          </a>
+        </div>
+      </div>
+      <!-- End Contact Information Column -->
+    </div>
+  </div>
+</section>
+<!-- Contact section end -->
+
+<!-- Footer start -->
+<footer class="bg-gray-800 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- About Us -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Tentang Kami</h3>
+        <p class="text-gray-400 mb-4 text-justify">
+          Senja Barbershop adalah tempat yang tepat untuk mendapatkan gaya potongan rambut yang sesuai dengan keinginan Anda. Kami menawarkan layanan profesional dengan sentuhan personal untuk membuat setiap kunjungan Anda menjadi pengalaman yang memuaskan.
+        </p>
+        <a href="#" class="text-blue-400 hover:underline">Baca Selengkapnya</a>
+      </div>
+
+      <!-- Contact Information -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <address class="text-gray-400">Jl. Kramat Mundu Barat, Mangunjaya, Kec. Tambun Selatan, Kabupaten Bekasi</address>
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"></path>
+              <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path>
+            </svg>
+            <a href="mailto:rahmatfirdaus.tkj@gmail.com" class="text-blue-400 hover:underline">rahmatfirdaus.tkj@gmail.com</a>
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="https://wa.me/+6285156358709" class="text-blue-400 hover:underline">+6285156358709</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
+        <div class="flex space-x-4">
+          <a href="https://facebook.com" class="text-gray-400 hover:text-white">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4v10h-6V12H8V8h4V6c0-2.21 1.79-4 4-4h4v4h-2c-1.1 0-2 .9-2 2v2h4l-2 4z"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com/rahmat_senja01" class="text-gray-400 hover:text-white">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M16.5 7.5l.1-.1"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com" class="text-gray-400 hover:text-white">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.7 10.7 0 0 1-3.07.84 5.27 5.27 0 0 0 2.3-2.91 10.48 10.48 0 0 1-3.3 1.27A5.25 5.25 0 0 0 16.3 2a5.25 5.25 0 0 0-5.25 5.25c0 .41.04.81.11 1.2A14.94 14.94 0 0 1 3.16 2.65a5.27 5.27 0 0 0 1.62 7.01A5.2 5.2 0 0 1 2 9.3v.06a5.24 5.24 0 0 0 4.21 5.14 5.27 5.27 0 0 1-2.37.09A5.27 5.27 0 0 0 7 17.9a10.5 10.5 0 0 1-6.48 2.24A10.7 10.7 0 0 0 12 22a10.7 10.7 0 0 0 10-10.7c0-.16-.01-.31-.02-.46A7.68 7.68 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-12 border-t border-gray-700 pt-6 text-center">
+      <p class="text-gray-400 text-sm">
+        &copy; 2024 Senja Barbershop. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- Footer end -->
+
+
+  
+      
+</body>
+<script src="./node_modules/preline/dist/preline.js"></script>
+<script src="src/script.js"></script>
+</html>
