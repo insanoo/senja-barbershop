@@ -5,7 +5,7 @@
 
 @layer utilities {
     .bg-custom {
-      background-image: url('./src/img/logo2.jpg');
+      background-image: url('../src/img/logo2.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
