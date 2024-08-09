@@ -1427,15 +1427,15 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.\[--scrollspy-offset\:220\] {
+  --scrollspy-offset: 220;
+}
+
 .bg-custom {
   background-image: url('../src/img/logo2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.\[--scrollspy-offset\:220\] {
-  --scrollspy-offset: 220;
 }
 
 .hover\:border-pink-400:hover {
