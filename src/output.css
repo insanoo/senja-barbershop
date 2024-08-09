@@ -1134,7 +1134,7 @@ video {
 }
 
 .bg-custom {
-  background-image: url('src/img/logo2.jpg');
+  background-image: url('./src/img/logo2.jpg');
 }
 
 .fill-black {
@@ -1425,6 +1425,13 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-custom {
+  background-image: url('./src/img/logo2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .\[--scrollspy-offset\:220\] {
